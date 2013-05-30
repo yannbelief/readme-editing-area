@@ -46,7 +46,9 @@ Seperate the render of name and value of input
 Use `$f->get("desc")` in some occasions like textarea which put its value in the inner HTML
 
 ```html
-<te
+<textarea name="desc">
+<?php echo $f->get("desc");?>
+</textarea>
 ```
 
 
