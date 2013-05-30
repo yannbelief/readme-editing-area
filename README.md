@@ -15,6 +15,9 @@ class BookForm extends FormHelper {
     $this->input("lang", "English");
   }
 }
+```
+Then...
+```php
 $f = new BookForm; // while constructing an object, the init() method will be called automatically.
 $f->renderNameValue("name"); // name="name" value="MyBook"
 $f->renderNameValue("desc"); // name="desc" value="Its Description"
