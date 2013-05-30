@@ -33,7 +33,7 @@ The form helper will take care of the production of name-value pair for you.
 
 **Advantage:** it encourages the seperation of UI code (HTML code) and logic code (PHP code) by introducing a form helper as the mediator between them.
 
-Toturial Preparation
+Preparation to the Toturial Below
 --
 
 A form class describes its 3 inputs: name, desc, lang.
