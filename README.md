@@ -165,8 +165,8 @@ Methods of FormHelper
 
 |Method|Description|
 |------|-----------|
-|`isCompletedSource($arr)`||
-|`isPartialCompletedSource($arr)`||
+|`isEntirelyIn($arr)`||
+|`isPartiallyIn($arr)`||
 |`importFromArray($arr)`||
 
 **Domain model importing / exporting**
