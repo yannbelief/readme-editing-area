@@ -14,7 +14,7 @@ class BookForm extends FormHelper {
     $this->input("lang", "English");
   }
 }
-
+$f = new BookForm;
 $f->renderNameValue("name"); // name="name" value="MyBook"
 $f->renderNameValue("desc"); // name="desc" value="Its Description"
 $f->renderNameValue("lang"); // name="lang" value="English"
@@ -32,6 +32,9 @@ will produce
 The form helper will take care of the production of name-value pair for you.
 
 **Advantage:** it encourages the seperation of UI code (HTML code) and logic code (PHP code) by introducing a form helper as the mediator between them.
+
+Change the value of an input
+---
 
 Preparation to the Toturial Below
 --
