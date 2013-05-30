@@ -1,7 +1,35 @@
 
+Methods
+---
+
+**about HTML form rendering**
+
 |Method|Description|
 |------|-----------|
-|`a`|b|
+|`renderNameIntValue($name)`||
+|`renderNameValue($name) `||
+
+**about domain model importing / exporting**
+
+|Method|Description|
+|------|-----------|
+|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
+|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
+
+
+|Method|Description|
+|------|-----------|
+|`get($name)`||
+|`getInt($name)`||
+|`input($name,$value="")`||
+|`isCompleted($arr)`||
+|`isPartialCompleted($arr)`||
+|`importFromArray($arr)`||
+
+|`contains($input)`||
+|`getValues()`||
+|`setValues($arr)`||
+
 
 dd
 
