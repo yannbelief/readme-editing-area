@@ -16,6 +16,11 @@ Methods
 |`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
 |`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
 
+**about input decleartion**
+
+|Method|Description|
+|------|-----------|
+|`input($name,$value="")`||
 
 |Method|Description|
 |------|-----------|
