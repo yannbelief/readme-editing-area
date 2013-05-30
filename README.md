@@ -41,7 +41,7 @@ Change the value of an input
 	$f->renderNameValue("desc"); // name="desc" value="New Description"
 ```
 
-Seperate the render of name and value of input
+Seperate the render of name and value of an input
 ---
 Use `$f->get("input-name")` in some occasions like textarea which put its value in the inner HTML
 
