@@ -4,7 +4,7 @@
 
 Basic Usage
 ---
-Let's decalre a book form and its three inputs in `init()` method.
+Let's decalre a book form and its three inputs and initial values in `init()` method.
 
 ```php
 class BookForm extends FormHelper {
@@ -31,7 +31,7 @@ will produce
 ```
 The form helper will take care of the production of name-value pair for you.
 
-**Advantage:** it encourages the seperation of UI code (HTML code) and logic code (PHP code) by introducting a form helpr as the mediator between them.
+**Advantage:** it encourages the seperation of UI code (HTML code) and logic code (PHP code) by introducing a form helper as the mediator between them.
 
 Toturial Preparation
 --
