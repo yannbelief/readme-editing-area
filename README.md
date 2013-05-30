@@ -90,6 +90,8 @@ class Book {
 Read data from POST array and display it on an HTML form
 ---
 
+The `importFromArray` method will set the value of inputs in `$f` by the values  in the given array.
+
 php code:
 
 ```php
