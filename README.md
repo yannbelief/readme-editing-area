@@ -124,7 +124,9 @@ the HTML code is the same as previous section.
 Save data from POST array to database
 ---
 Firstly, use `isEntirelyIn` method to check whether the `$_POST` array contains all names of inputs that described in `$f`.
+
 If so, read the corresponding values from the `$_POST` array into form helper `$f`.
+
 And export the data into a book object, then save it.
 
 ```php
