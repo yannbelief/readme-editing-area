@@ -15,8 +15,20 @@ class BookForm extends FormHelper {
 }
 
 $f->renderNameValue("name"); // name="name" value="MyBook"
-$f->renderNameValue("des"); // name="name" value="MyBook"
+$f->renderNameValue("desc"); // name="desc" value="Its Description"
+$f->renderNameValue("lang"); // name="lang" value="English"
 ```
+Hence the code:
+
+```html
+	<input id="name" <?php $f->renderNameValue("desc") ?> />
+```
+will procude
+
+```html
+	<input id="name"  name="desc" value="Its Description" />
+```
+The form helper will take care of 
 
 Toturial Preparation
 --
