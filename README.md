@@ -7,17 +7,17 @@ Basic Usage
 Let's decalre a book form and its three inputs with initial values in `init()` method. Remember to inherit the parent class `FormHelper`.
 
 ```php
-  class BookForm extends FormHelper {
-    function init() {
-      $this->input("name", "My Book");
-      $this->input("desc", "Its Description");
-      $this->input("lang", "English");
-    }
+class BookForm extends FormHelper {
+  function init() {
+    $this->input("name", "My Book");
+    $this->input("desc", "Its Description");
+    $this->input("lang", "English");
   }
-  $f = new BookForm; // while constructing an object, the init() method will be called automatically.
-  $f->renderNameValue("name"); // name="name" value="MyBook"
-  $f->renderNameValue("desc"); // name="desc" value="Its Description"
-  $f->renderNameValue("lang"); // name="lang" value="English"
+}
+$f = new BookForm; // while constructing an object, the init() method will be called automatically.
+$f->renderNameValue("name"); // name="name" value="MyBook"
+$f->renderNameValue("desc"); // name="desc" value="Its Description"
+$f->renderNameValue("lang"); // name="lang" value="English"
 ```
 Hence the code:
 
