@@ -4,6 +4,7 @@
 
 Basic Usage
 ---
+Let's decalre a book form and its three inputs in `init()` method.
 
 ```php
 class BookForm extends FormHelper {
@@ -28,7 +29,7 @@ will procude
 ```html
 	<input id="name"  name="desc" value="Its Description" />
 ```
-The form helper will take care of 
+The form helper will take care of the production of name-value pair for you.
 
 Toturial Preparation
 --
