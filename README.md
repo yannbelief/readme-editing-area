@@ -52,11 +52,11 @@ $f->importFromArray($_POST);
 html code:
 
 ```html
-<form class="form-horizontal" action="<?php $PHP_SELF ?>"  method="POST" enctype="multipart/form-data">
+<form action="<?php $PHP_SELF ?>"  method="POST" >
 
-  <input type="text" id="username" <?php $f->renderNameValue("name"); ?> />
-  <textarea id="email" name="desc" placeholder="short description about the book"><?php echo $f->get("desc");?></textarea>
-  <input type="text" id="lang" <?php $f->renderNameValue("lang"); ?> />
+  <input type="text" <?php $f->renderNameValue("name"); ?> />
+  <textarea name="desc"><?php echo $f->get("desc");?></textarea>
+  <input type="text" <?php $f->renderNameValue("lang"); ?> />
 </form>
 
 ```
