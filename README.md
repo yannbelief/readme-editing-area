@@ -2,33 +2,11 @@
 Methods
 ---
 
-**about HTML form rendering**
-
-|Method|Description|
-|------|-----------|
-|`renderNameIntValue($name)`||
-|`renderNameValue($name) `||
-
-**Domain model importing / exporting**
-
-|Method|Description|
-|------|-----------|
-|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
-|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
-
 **Input decleartion**
 
 |Method|Description|
 |------|-----------|
 |`input($name,$value="")`||
-
-**Array importing / examination**
-
-|Method|Description|
-|------|-----------|
-|`isCompleted($arr)`||
-|`isPartialCompleted($arr)`||
-|`importFromArray($arr)`||
 
 **Basic value getter / setter and contain?**
 
@@ -40,8 +18,30 @@ Methods
 |`getValues()`||
 |`setValues($arr)`||
 
+**about HTML form rendering**
 
-dd
+|Method|Description|
+|------|-----------|
+|`renderNameIntValue($name)`||
+|`renderNameValue($name) `||
+
+**Array importing / examination**
+
+|Method|Description|
+|------|-----------|
+|`isCompleted($arr)`||
+|`isPartialCompleted($arr)`||
+|`importFromArray($arr)`||
+
+**Domain model importing / exporting**
+
+|Method|Description|
+|------|-----------|
+|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
+|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
+
+
+
 
 Toturial Preparation
 --
