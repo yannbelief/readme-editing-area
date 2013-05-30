@@ -20,7 +20,7 @@ Methods
 
 |Method|Description|
 |------|-----------|
-|`input($name,$value="")`||
+|```php input($name,$value="")```||
 
 **about array importing / examination**
 
