@@ -22,15 +22,17 @@ Methods
 |------|-----------|
 |`input($name,$value="")`||
 
+**about array importing / examination**
 |Method|Description|
 |------|-----------|
-|`get($name)`||
-|`getInt($name)`||
-|`input($name,$value="")`||
 |`isCompleted($arr)`||
 |`isPartialCompleted($arr)`||
 |`importFromArray($arr)`||
 
+|Method|Description|
+|------|-----------|
+|`get($name)`||
+|`getInt($name)`||
 |`contains($input)`||
 |`getValues()`||
 |`setValues($arr)`||
