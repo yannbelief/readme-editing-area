@@ -41,6 +41,15 @@ $f->set("desc","New Description");
 $f->renderNameValue("desc"); // name="desc" value="New Description"
 ```
 
+Seperate the render of name and value of input
+---
+Use `$f->get("desc")` in some occasions like textarea which put its value in the inner HTML
+
+```html
+<te
+```
+
+
 Preparation to the Toturial Below
 --
 
