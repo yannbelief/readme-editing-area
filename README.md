@@ -1,46 +1,4 @@
 
-Methods
----
-
-**Input decleartion**
-
-|Method|Description|
-|------|-----------|
-|`input($name,$value="")`||
-
-**Basic value getter / setter and contain?**
-
-|Method|Description|
-|------|-----------|
-|`get($name)`||
-|`getInt($name)`||
-|`contains($input)`||
-|`getValues()`||
-|`setValues($arr)`||
-
-**about HTML form rendering**
-
-|Method|Description|
-|------|-----------|
-|`renderNameIntValue($name)`||
-|`renderNameValue($name) `||
-
-**Array importing / examination**
-
-|Method|Description|
-|------|-----------|
-|`isCompleted($arr)`||
-|`isPartialCompleted($arr)`||
-|`importFromArray($arr)`||
-
-**Domain model importing / exporting**
-
-|Method|Description|
-|------|-----------|
-|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
-|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
-
-
 
 
 Toturial Preparation
@@ -124,3 +82,45 @@ if($f->isCompleted($_POST)) {
   Book::insert($book);
 }
 ```
+
+Methods of FormHelper
+---
+
+**Input decleartion**
+
+|Method|Description|
+|------|-----------|
+|`input($name,$value="")`||
+
+**Basic value getter / setter and contain?**
+
+|Method|Description|
+|------|-----------|
+|`get($name)`||
+|`getInt($name)`||
+|`contains($input)`||
+|`getValues()`||
+|`setValues($arr)`||
+
+**about HTML form rendering**
+
+|Method|Description|
+|------|-----------|
+|`renderNameIntValue($name)`||
+|`renderNameValue($name) `||
+
+**Array importing / examination**
+
+|Method|Description|
+|------|-----------|
+|`isCompleted($arr)`||
+|`isPartialCompleted($arr)`||
+|`importFromArray($arr)`||
+
+**Domain model importing / exporting**
+
+|Method|Description|
+|------|-----------|
+|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
+|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
+
