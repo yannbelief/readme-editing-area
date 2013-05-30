@@ -35,6 +35,7 @@ The form helper will take care of the production of name-value pair for you.
 
 Change the value of an input
 ---
+Sometimes we need to change the value of an input which belongs to a form helper, use `set` method.
 
 ```php
 	$f->set("desc","New Description");
