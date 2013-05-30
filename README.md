@@ -23,6 +23,7 @@ Methods
 |`input($name,$value="")`||
 
 **about array importing / examination**
+
 |Method|Description|
 |------|-----------|
 |`isCompleted($arr)`||
