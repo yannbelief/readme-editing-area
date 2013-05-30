@@ -4,7 +4,7 @@
 
 Basic Usage
 ---
-Let's decalre a book form and its three inputs and initial values in `init()` method. Remember to inherit the parent class `FormHelper`.
+Let's decalre a book form and its three inputs with initial values in `init()` method. Remember to inherit the parent class `FormHelper`.
 
 ```php
 class BookForm extends FormHelper {
