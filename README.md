@@ -119,7 +119,7 @@ php code:
 	$f->importFromModel($book);
 ```
 
-the HTML code is the same as shown above.
+the HTML code is the same as previous section.
 
 Save data from POST array to database
 ---
