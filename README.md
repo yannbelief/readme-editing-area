@@ -1,6 +1,23 @@
 
 
 
+
+Basic Usage
+---
+
+```php
+class BookForm extends FormHelper {
+  function init() {
+    $this->input("name","My Book");
+    $this->input("desc","Its Description");
+    $this->input("lang", "English");
+  }
+}
+
+$f->renderNameValue("name"); // name="name" value="MyBook"
+$f->renderNameValue("des"); // name="name" value="MyBook"
+```
+
 Toturial Preparation
 --
 
