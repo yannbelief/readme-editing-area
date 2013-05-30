@@ -128,7 +128,7 @@ Save data from POST array to database
 
 $f = new BookForm();
 
-if($f->isCompletedSource($_POST)) {
+if($f->isEntirelyIn($_POST)) {
   $f->importFromArray($_POST);
   $book = $f->exportToModel(Book);
   Book::insert($book);
