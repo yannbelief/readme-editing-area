@@ -112,6 +112,8 @@ html code:
 Read data from database and display it on an HTML form
 ---
 
+The `importFromModel` method will set the value of inputs in `$f` by the values of attributes in a domain object.
+
 php code:
 
 ```php
