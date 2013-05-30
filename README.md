@@ -44,7 +44,7 @@ Sometimes we need to change the value of an input which belongs to a form helper
 
 Seperate the render of name and value of an input
 ---
-Use `$f->get("input-name")` in some occasions like textarea which put its value in the inner HTML
+Use `$f->get("input-name")` in some occasions like textarea which put its content in the inner HTML
 
 ```html
 	<textarea name="desc">
@@ -128,7 +128,7 @@ Save data from POST array to database
 
 $f = new BookForm();
 
-if($f->isCompleted($_POST)) {
+if($f->isCompletedSource($_POST)) {
   $f->importFromArray($_POST);
   $book = $f->exportToModel(Book);
   Book::insert($book);
@@ -165,8 +165,8 @@ Methods of FormHelper
 
 |Method|Description|
 |------|-----------|
-|`isCompleted($arr)`||
-|`isPartialCompleted($arr)`||
+|`isCompletedSource($arr)`||
+|`isPartialCompletedSource($arr)`||
 |`importFromArray($arr)`||
 
 **Domain model importing / exporting**
