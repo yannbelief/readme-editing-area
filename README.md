@@ -36,6 +36,11 @@ The form helper will take care of the production of name-value pair for you.
 Change the value of an input
 ---
 
+```php
+$f->set("desc","New Description");
+$f->renderNameValue("desc"); // name="desc" value="New Description"
+```
+
 Preparation to the Toturial Below
 --
 
