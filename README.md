@@ -9,26 +9,28 @@ Methods
 |`renderNameIntValue($name)`||
 |`renderNameValue($name) `||
 
-**about domain model importing / exporting**
+**Domain model importing / exporting**
 
 |Method|Description|
 |------|-----------|
 |`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
 |`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
 
-**about input decleartion**
+**Input decleartion**
 
 |Method|Description|
 |------|-----------|
 |`input($name,$value="")`||
 
-**about array importing / examination**
+**Array importing / examination**
 
 |Method|Description|
 |------|-----------|
 |`isCompleted($arr)`||
 |`isPartialCompleted($arr)`||
 |`importFromArray($arr)`||
+
+**Basic value getter / setter and contain?**
 
 |Method|Description|
 |------|-----------|
