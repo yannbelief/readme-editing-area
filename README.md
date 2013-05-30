@@ -55,7 +55,7 @@ html code:
 <form class="form-horizontal" action="<?php $PHP_SELF ?>"  method="POST" enctype="multipart/form-data">
 
   <input type="text" id="username" <?php $f->renderNameValue("name"); ?> />
-  <textarea id="email" name="desc" placeholder="Please provide a short description of the book"><?php echo $f->get("desc");?></textarea>
+  <textarea id="email" name="desc" placeholder="short description about the book"><?php echo $f->get("desc");?></textarea>
   <input type="text" id="lang" <?php $f->renderNameValue("lang"); ?> />
 </form>
 
