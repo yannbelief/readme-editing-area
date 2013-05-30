@@ -90,7 +90,7 @@ class Book {
 Read data from POST array and display it on an HTML form
 ---
 
-The `importFromArray` method will set the value of inputs in `$f` by the values  in the given array.
+The `importFromArray` method will set the value of input in `$f` with the value of a key, having the same name as the input, in the given array.
 
 php code:
 
@@ -114,7 +114,7 @@ html code:
 Read data from database and display it on an HTML form
 ---
 
-The `importFromModel` method will set the value of inputs in `$f` by the values of attributes in a domain object.
+The `importFromModel` method will set the value of input in `$f` with the value of attribute, having the same name as the input, in a domain object.
 
 php code:
 
