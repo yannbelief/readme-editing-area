@@ -24,12 +24,14 @@ Hence the code:
 ```html
 	<input id="name" <?php $f->renderNameValue("desc") ?> />
 ```
-will procude
+will produce
 
 ```html
-	<input id="name"  name="desc" value="Its Description" />
+	<input id="name" name="desc" value="Its Description" />
 ```
 The form helper will take care of the production of name-value pair for you.
+
+**Advantage:** it encourages the seperation of UI code (HTML code) and logic code (PHP code) by introducting a form helpr as the mediator between them.
 
 Toturial Preparation
 --
