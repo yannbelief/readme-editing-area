@@ -13,8 +13,8 @@ Methods
 
 |Method|Description|
 |------|-----------|
-|exportToModel($className, $form_prefix = "", $form_suffix = "")||
-|importFromModel($model, $form_prefix = "", $form_suffix = "")||
+|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
+|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
 
 **about input decleartion**
 
