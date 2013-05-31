@@ -198,5 +198,4 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 * Import the corresponding values from the given domain object into form helper
 
-
-** input prefix / suffix filtering **
+**Input prefix / suffix filtering**
