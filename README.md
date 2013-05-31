@@ -170,8 +170,8 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |`get(string $name) : string`| get the value of input by its name|
 |`getInt(string $name) : int`| get the int value of input by its name |
 |`contains(string $input_name) : boolean`| check if helper contains an input with a given name |
-|`getValues() : array`||
-|`setValues(array $arr) : void`||
+|`getValues() : array`| returns a key-value hash about input name and its value |
+|`setValues(array $arr) : void`| set helper's inernal array with a given input-name-to-value hash |
 
 **about HTML form rendering**
 
