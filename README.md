@@ -190,11 +190,9 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 **Domain model importing / exporting**
 
-|Method and Description|
-|-----------------|
-|
 `exportToModel(string $className, string $form_prefix = "", string $form_suffix = "") : className`
 sss
-|
-|`importFromModel(string $model, string $form_prefix = "", string $form_suffix = "") : void`|
+
+`importFromModel(string $model, string $form_prefix = "", string $form_suffix = "") : void`
+ttt
 
