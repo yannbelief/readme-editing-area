@@ -155,7 +155,7 @@ if($f->isEntirelyIn($_POST)) {
 Methods of FormHelper
 ---
 
-**Input decleartion**
+**Input declaration**
 
 |Method|Description|
 |------|-----------|
