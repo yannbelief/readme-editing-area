@@ -3,6 +3,13 @@ Form Helper
 ============================
 
 
+
+**Requirement:** PHP 5.1+
+
+**License:** Free for commercial and non-commercial use ([Apache License](http://www.apache.org/licenses/LICENSE-2.0.html) or [GPL](http://www.gnu.org/licenses/gpl-2.0.html))
+
+**Note:** The following tutorial uses short array syntax `[]` which is available in PHP 5.4+.
+
 Basic Usage
 ---
 Let's declare a book form and its three inputs with initial values in `init()` method. Remember to inherit the parent class `FormHelper`.
@@ -20,9 +27,9 @@ Then initialize a form object `$f`, and use `renderNameValue` to generate a name
 
 ```php
 $f = new BookForm; // while constructing an object, the init() method will be called automatically.
-$f->renderNameValue("name"); // name="name" value="MyBook"
-$f->renderNameValue("desc"); // name="desc" value="Its Description"
-$f->renderNameValue("lang"); // name="lang" value="English"
+$f->renderNameValue("name"); // equals to echo 'name="name" value="MyBook"'
+$f->renderNameValue("desc"); // equals to echo 'name="desc" value="Its Description"'
+$f->renderNameValue("lang"); // equals to echo 'name="lang" value="English"'
 ```
 Hence the code:
 
