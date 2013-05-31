@@ -2,7 +2,7 @@
 PHP Form Helper
 ============================
 
-The form helper is designed to help programmers to simplify the back-end process flow of data related to HTML form. It provides convenient methods to read data from `$_POST` or `$_GET` array, to quickly dump the form data into a domain object which can be saved in to database later on, and to seperate (decouple) the UI code (HTML code) and the logic code (PHP code).
+The form helper is designed to help programmers to simplify the back-end process flow of data related to HTML form. It provides convenient methods to read data from `$_POST` or `$_GET` array, to quickly dump the form data into a domain object which can be saved in to database later on, and to encourage the seperation of the code about how the form looks like and the code about assigning a value to an input in the form.
 
 **Requirement:** PHP 5.1+
 
@@ -53,7 +53,7 @@ Sometimes we need to change the value of an input which belongs to a form helper
 	$f->renderNameValue("desc"); // name="desc" value="New Description"
 ```
 
-**Advantage:** So far, you can see that the design of form helper encourages the seperation of UI code (HTML code about how the form looks like) and logic code (PHP code about assigning a value to a input of form) by introducing a form helper as the mediator between them. You can benefit from it when your site change frequently.
+**Advantage:** So far, you can see that the design of form helper encourages the seperation of UI code (the HTML code about how the form looks like) and logic code (PHP code about assigning a value to an input in the form) by introducing a form helper as the mediator between them. You can benefit from it when your site change frequently.
 
 Seperate the render of name and value of an input
 ---
