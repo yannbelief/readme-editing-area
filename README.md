@@ -191,8 +191,10 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 **Domain model importing / exporting**
 
 `exportToModel(string $className, string $form_prefix = "", string $form_suffix = "") : className`
+
 sss
 
 `importFromModel(string $model, string $form_prefix = "", string $form_suffix = "") : void`
+
 ttt
 
