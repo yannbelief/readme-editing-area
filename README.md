@@ -15,6 +15,7 @@ Basic Usage
 Let's declare a book form and its three inputs with initial values in `init()` method. Remember to inherit the parent class `FormHelper`.
 
 ```php
+require("php-form-helper/form.php");
 class BookForm extends FormHelper {
   function init() {
     $this->input("name", "My Book");
