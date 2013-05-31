@@ -167,11 +167,11 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`get($name)`||
-|`getInt($name)`||
-|`contains($input_name)`||
-|`getValues()`||
-|`setValues($arr)`||
+|`get($name):string`||
+|`getInt($name):int`||
+|`contains($input_name):boolean`||
+|`getValues():array`||
+|`setValues($arr):void`||
 
 **about HTML form rendering**
 
