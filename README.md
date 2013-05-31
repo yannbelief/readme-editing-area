@@ -1,8 +1,8 @@
 
-Form Helper
+PHP Form Helper
 ============================
 
-
+The form helper is designed to help programmers to simplify the back-end process flow of data related to HTML form.
 
 **Requirement:** PHP 5.1+
 
