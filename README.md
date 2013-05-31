@@ -161,7 +161,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`input(string $name, string $value="") : void`| register a input with its name and an optional value|
+|`input(string $name, string $value="") : void`| register an input with its name and an optional value|
 
 **Basic value getter / setter and contain?**
 
@@ -177,8 +177,8 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`renderNameIntValue(string $name) : string`||
-|`renderNameValue(string $name) : string `||
+|`renderNameIntValue(string $name) : string`| print out a name-value pair in the form of HTML attribute |
+|`renderNameValue(string $name) : string `| print out a name-int-value pair in the form of HTML attribute |
 
 **Array importing / examination**
 
