@@ -161,32 +161,32 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`input($name,$value="")`||
+|`input(string $name, string $value="") : void`||
 
 **Basic value getter / setter and contain?**
 
 |Method|Description|
 |------|-----------|
-|`get($name):string`||
-|`getInt($name):int`||
-|`contains($input_name):boolean`||
-|`getValues():array`||
-|`setValues($arr):void`||
+|`get(string $name) : string`||
+|`getInt(string $name) : int`||
+|`contains(string $input_name) : boolean`||
+|`getValues() : array`||
+|`setValues(array $arr) : void`||
 
 **about HTML form rendering**
 
 |Method|Description|
 |------|-----------|
-|`renderNameIntValue($name)`||
-|`renderNameValue($name) `||
+|`renderNameIntValue(string $name) : string`||
+|`renderNameValue(string $name) : string `||
 
 **Array importing / examination**
 
 |Method|Description|
 |------|-----------|
-|`isEntirelyIn($arr)`||
-|`isPartiallyIn($arr)`||
-|`importFromArray($arr)`||
+|`isEntirelyIn(array $arr) : boolean`||
+|`isPartiallyIn(array $arr) : boolean`||
+|`importFromArray(array $arr) : void`||
 
 **Domain model importing / exporting**
 
