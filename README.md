@@ -190,11 +190,11 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 **Domain model importing / exporting**
 
-`exportToModel(string $className, string $form_prefix = "", string $form_suffix = "") : className`
+`exportToModel(string $className, string $input_prefix = "", string $input_suffix = "") : className`
 
-sss
+Export the corresponding values from form helper into the given domain object
 
-`importFromModel(string $model, string $form_prefix = "", string $form_suffix = "") : void`
+`importFromModel(string $model, string $input_prefix = "", string $input_suffix = "") : void`
 
-ttt
+Import the corresponding values from the given domain object into form helper
 
