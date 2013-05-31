@@ -173,7 +173,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |`getValues() : array`| returns a key-value hash about input name and its value |
 |`setValues(array $arr) : void`| set helper's inernal array with a given input-name-to-value hash |
 
-**about HTML form rendering**
+**About HTML form rendering**
 
 |Method|Description|
 |------|-----------|
@@ -184,9 +184,9 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`isEntirelyIn(array $arr) : boolean`||
-|`isPartiallyIn(array $arr) : boolean`||
-|`importFromArray(array $arr) : void`||
+|`isEntirelyIn(array $arr) : boolean`| check if the given array contains all names of inputs that described in this helper |
+|`isPartiallyIn(array $arr) : boolean`| check if the given array contains at least one name of inputs that described in this helper |
+|`importFromArray(array $arr) : void`| read the corresponding values from the given array into form helper|
 
 **Domain model importing / exporting**
 
