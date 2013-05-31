@@ -161,7 +161,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`input(string $name, string $value="") : void`||
+|`input(string $name, string $value="") : void`| register a input with its name and an optional value|
 
 **Basic value getter / setter and contain?**
 
