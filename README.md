@@ -192,6 +192,6 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 |Method|Description|
 |------|-----------|
-|`exportToModel($className, $form_prefix = "", $form_suffix = "")`||
-|`importFromModel($model, $form_prefix = "", $form_suffix = "")`||
+|`exportToModel(string $className, string $form_prefix = "", string $form_suffix = "") : className`||
+|`importFromModel(string $model, string $form_prefix = "", string $form_suffix = "") : void`||
 
