@@ -16,7 +16,8 @@ class BookForm extends FormHelper {
   }
 }
 ```
-Then...
+Then initialize a form object `$f`, and use `renderNameValue` to generate a name-value pair which follows the format of attributes of an HTML input tag.
+
 ```php
 $f = new BookForm; // while constructing an object, the init() method will be called automatically.
 $f->renderNameValue("name"); // name="name" value="MyBook"
