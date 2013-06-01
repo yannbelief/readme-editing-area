@@ -198,7 +198,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 * Import the corresponding values from the given domain object into form helper
 
-**Advanced Feature: Input prefix & suffix matching **
+**Advanced Feature: Input prefix & suffix matching**
 
 
 ```html
