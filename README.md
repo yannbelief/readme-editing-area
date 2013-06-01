@@ -204,7 +204,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 ```html
 <form>
   <input name="eng_book_name_1" value = "My English book 1" />
-  <input name="eng_book_desc_1" value = "The description My English book 1" />
+  <input name="eng_book_desc_1" value = "The description about My English book 1" />
   <input name="eng_book_lang_1" value = "English" />
   
   <input name="cht_book_name_2" value = "My traditional chinese book 2" />
@@ -212,4 +212,18 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
   <input name="cht_book_lang_2" value = "Traditional Chinese" />
   
 </form>
+```
+
+```php
+
+class BooksForm {
+	function init() {
+    	$this->input("eng_book_name_1");
+    	$this->input("eng_book_name_1");
+    }
+
+}
+
+$f = new BookForm
+$f->
 ```
