@@ -219,11 +219,20 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 class BooksForm {
 	function init() {
     	$this->input("eng_book_name_1");
-    	$this->input("eng_book_name_1");
+    	$this->input("eng_book_desc_1");
+        $this->input("eng_book_lang_1");
+        $this->input("cht_book_name_2");
+    	$this->input("cht_book_desc_2");
+        $this->input("cht_book_lang_2");
     }
 
 }
+```
 
-$f = new BookForm
-$f->
+```php
+$f = new BooksForm
+$f->importFromArray($_POST);
+$eng_book_1 = $f->exportToModel("Book","eng","1");
+echo $eng_book_1->name 
+
 ```
