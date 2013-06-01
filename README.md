@@ -66,7 +66,7 @@ Use `$f->get("input-name")` in some occasions like textarea which put its conten
 ```
 
 
-Preparation to the toturial below
+Preparation to toturials in the following sections
 --
 
 A form class describes its 3 inputs: name, desc, lang.
