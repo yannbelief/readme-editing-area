@@ -163,7 +163,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |------|-----------|
 |`input(string $name, string $value="") : void`| register an input with its name and an optional value|
 
-**Basic value getter / setter and contain?**
+**Basic Value getter / setter and contain?**
 
 |Method|Description|
 |------|-----------|
@@ -173,14 +173,14 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |`getValues() : array`| returns a key-value hash about input name and its value |
 |`setValues(array $arr) : void`| set helper's inernal array with a given input-name-to-value hash |
 
-**About HTML form rendering**
+**About HTML Form Rendering**
 
 |Method|Description|
 |------|-----------|
 |`renderNameIntValue(string $name) : string`| print out a name-value pair in the form of HTML attribute |
 |`renderNameValue(string $name) : string `| print out a name-int-value pair in the form of HTML attribute |
 
-**Array importing / examination**
+**Array Importing and Examination**
 
 |Method|Description|
 |------|-----------|
@@ -188,7 +188,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |`isPartiallyIn(array $arr) : boolean`| check if the given array contains at least one name of inputs that described in this helper |
 |`importFromArray(array $arr) : void`| read the corresponding values from the given array into form helper|
 
-**Domain model importing / exporting**
+**Domain Model Importing and Exporting**
 
 `exportToModel(string $className, string $input_prefix = "", string $input_suffix = "") : className`
 
@@ -198,7 +198,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 * Import the corresponding values from the given domain object into form helper
 
-**Input prefix / suffix filtering**
+**Advanced Feature: Input prefix & suffix matching **
 
 
 ```html
