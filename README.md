@@ -55,7 +55,7 @@ Sometimes we need to change the value of an input which belongs to a form helper
 
 **Advantage:** So far, you can see that the design of form helper encourages the seperation of UI code (the HTML code about how the form looks like) and logic code (PHP code about assigning a value to an input in the form) by introducing a form helper as the mediator between them. You can benefit from it when your site change frequently.
 
-Seperate the render of name and value of an input
+Seperate the rendering of name and value of an input
 ---
 Use `$f->get("input-name")` in some occasions like textarea which put its content in the inner HTML
 
