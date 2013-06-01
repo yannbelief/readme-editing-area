@@ -232,7 +232,15 @@ class BooksForm {
 ```php
 $f = new BooksForm
 $f->importFromArray($_POST);
-$eng_book_1 = $f->exportToModel("Book","eng","1");
-echo $eng_book_1->name 
+
+$eng_book_1 = $f->exportToModel("Book","eng_book","1");
+echo $eng_book_1->name; // My English book 1
+echo $eng_book_1->desc; // The description about My English book 1
+echo $eng_book_1->lang; // English
+
+$cht_book_2 = $f->exportToModel("Book","cht_book","2");
+echo $cht_book_2->name; // My traditional chinese book 2
+echo $cht_book_2->desc; // 
+echo $cht_book_2->lang; // 
 
 ```
