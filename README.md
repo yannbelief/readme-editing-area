@@ -199,3 +199,17 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 * Import the corresponding values from the given domain object into form helper
 
 **Input prefix / suffix filtering**
+
+
+```html
+<form>
+  <input name="eng_book_name_1" value = "my english book 1" />
+  <input name="eng_book_desc_1" value = "my english book  desc 1" />
+  <input name="eng_book_lang_1" value = "English" />
+  
+  <input name="cht_book_name_2" value = "my english book 2" />
+  <input name="cht_book_desc_2" value = "my english book  desc 2" />
+  <input name="cht_book_lang_2" value = "Traditional chinese" />
+  
+</form>
+```
