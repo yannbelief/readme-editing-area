@@ -2,7 +2,7 @@
 PHP Form Helper
 ============================
 
-The form helper is designed to help programmers to simplify the back-end process flow of data related to HTML form. It provides convenient methods to read data from `$_POST` or `$_GET` array, to quickly dump the form data into a domain object which can be saved in to database later on, and to encourage the seperation of the code about how the form looks like and the code about assigning a value to an input in the form.
+The form helper is designed to help programmers to simplify the back-end process flow of data related to HTML form. It provides convenient methods to read data from `$_POST` or `$_GET` array, to quickly dump the form data into a domain object which can be saved into database later on, and it encourages the seperation of the code about how the form looks like and the code about assigning a value to an input in the form.
 
 **Requirement:** PHP 5.1+
 
