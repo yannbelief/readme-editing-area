@@ -202,7 +202,7 @@ Matching prefix or suffix while exporting to domain object
 ---
 If a form contains many domain objects that differ in prefix and suffix of input names, the FormHelper can also help you sperate them into different objects.
 
-Consider the following HTML code showing that the two object instances, contained in one form, of Book class.
+Consider the following HTML code showing that the two object instances of Book class are contained in one form.
 
 ```html
 <form>
