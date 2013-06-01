@@ -127,7 +127,7 @@ html code:
 Read data from database and display it on an HTML form
 ---
 
-The `importFromModel` method will give the input in `$f` the value of attribute, having the same name as the input, in a domain object.
+The `importFromModel` method will give the input in `$f` the value of the attribute which has the same name as the input, in a domain object.
 
 php code:
 
