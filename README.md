@@ -217,7 +217,7 @@ Advanced Feature: Input prefix & suffix matching
 
 ```php
 
-class BooksForm {
+class BooksForm extends FormHelper {
 	function init() {
     	$this->input("eng_book_name_1");
     	$this->input("eng_book_desc_1");
@@ -232,13 +232,12 @@ class BooksForm {
 ```
 
 ```php
-class BookForm extends FormHelper {
-  function init() {
-    $this->input("name");
-    $this->input("desc");
-    $this->input("lang");
-  }
-}
+class Book {
+  public name;
+  public desc;
+  public lang;
+  /* the remaining code is omitted*/
+ }
 ```
 
 
