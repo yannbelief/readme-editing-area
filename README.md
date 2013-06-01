@@ -243,7 +243,7 @@ class Book {
   /* the remaining code is omitted*/
  }
 ```
-Now, we are trying to extract the data out of `$_POST` array.
+Now, we are trying to extract the data of books from `$_POST` array.
 
 ```php
 $f = new BooksForm
