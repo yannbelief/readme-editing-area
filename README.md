@@ -192,7 +192,7 @@ I list down all the methods in the class `FormHelper`, thoese methods are also a
 
 `exportToModel(string $className, string $input_prefix = "", string $input_suffix = "") : className`
 
-* Export the corresponding values from a form helper into the given domain object. The usage of `$input_prefix` and `$input_suffix` is detailed in the following section.
+* Export the corresponding values from a form helper into a domain object by giving its class name. The usage of `$input_prefix` and `$input_suffix` is detailed in the following section.
 
 `importFromModel(string $model, string $input_prefix = "", string $input_suffix = "") : void`
 
