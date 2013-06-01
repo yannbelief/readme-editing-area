@@ -216,6 +216,7 @@ Consider the following HTML code showing that the two object instances of Book c
   
 </form>
 ```
+And the corresponding form class is `BooksForm` described below.
 
 ```php
 
