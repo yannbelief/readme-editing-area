@@ -163,7 +163,7 @@ I list down all the methods in the class `FormHelper`, thoese methods are also a
 |------|-----------|
 |`input(string $name, string $value="") : void`| register an input with its name and an optional value|
 
-**Basic Operations on Form Value(s) **
+**Basic Operations Against Form Value(s)**
 
 |Method|Description|
 |------|-----------|
