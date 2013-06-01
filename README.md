@@ -198,7 +198,7 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 
 * Import the corresponding values from the given domain object into form helper
 
-Matching name with prefix or suffix while exporting to domain object
+Matching prefix or suffix while exporting to domain object
 ---
 
 
