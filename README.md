@@ -233,6 +233,7 @@ class BooksForm extends FormHelper {
 
 }
 ```
+As a reminder, the `Book` class is the same as we mentioned in other section.
 
 ```php
 class Book {
