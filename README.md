@@ -157,13 +157,13 @@ Methods of FormHelper
 ---
 I list all the methods in the class `FormHelper`, thoese methods are also avaible to all subclasses that inherit it.
 
-**Input declaration**
+**Input Declaration**
 
 |Method|Description|
 |------|-----------|
 |`input(string $name, string $value="") : void`| register an input with its name and an optional value|
 
-**Basic Value getter / setter and contain?**
+**Basic Operations on Form Value(s) **
 
 |Method|Description|
 |------|-----------|
@@ -173,14 +173,14 @@ I list all the methods in the class `FormHelper`, thoese methods are also avaibl
 |`getValues() : array`| returns a key-value hash about input name and its value |
 |`setValues(array $arr) : void`| set helper's inernal array with a given input-name-to-value hash |
 
-**About HTML Form Rendering**
+**HTML Form Rendering**
 
 |Method|Description|
 |------|-----------|
 |`renderNameIntValue(string $name) : string`| print out a name-value pair in the form of HTML attribute |
 |`renderNameValue(string $name) : string `| print out a name-int-value pair in the form of HTML attribute |
 
-**Array Importing and Examination**
+**Importation and Examination of Source Data in Array**
 
 |Method|Description|
 |------|-----------|
