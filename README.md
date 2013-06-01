@@ -200,9 +200,9 @@ I list down all the methods in the class `FormHelper`, thoese methods are also a
 
 Matching prefix or suffix while exporting to domain object
 ---
-If a form contains many domain objects that distinguish themself from different prefix and suffix, then the FormHelper can also help you sperate them into different objects.
+If a form contains many domain objects that differ in prefix and suffix of input names, the FormHelper can also help you sperate them into different objects.
 
-Consider the following example:
+Consider the following HTML code showing that the two object instances, contained in one form, of Book class.
 
 ```html
 <form>
