@@ -221,6 +221,7 @@ class BooksForm {
     	$this->input("eng_book_name_1");
     	$this->input("eng_book_desc_1");
         $this->input("eng_book_lang_1");
+        
         $this->input("cht_book_name_2");
     	$this->input("cht_book_desc_2");
         $this->input("cht_book_lang_2");
@@ -228,6 +229,17 @@ class BooksForm {
 
 }
 ```
+
+```php
+class BookForm extends FormHelper {
+  function init() {
+    $this->input("name");
+    $this->input("desc");
+    $this->input("lang");
+  }
+}
+```
+
 
 ```php
 $f = new BooksForm
@@ -240,7 +252,7 @@ echo $eng_book_1->lang; // English
 
 $cht_book_2 = $f->exportToModel("Book","cht_book","2");
 echo $cht_book_2->name; // My traditional chinese book 2
-echo $cht_book_2->desc; // 
-echo $cht_book_2->lang; // 
+echo $cht_book_2->desc; // The description about my traditional chinese book  2
+echo $cht_book_2->lang; // Traditional Chinese
 
 ```
