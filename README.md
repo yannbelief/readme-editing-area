@@ -196,7 +196,7 @@ I list down all the methods in the class `FormHelper`, thoese methods are also a
 
 `importFromModel(string $model, string $input_prefix = "", string $input_suffix = "") : void`
 
-* Import the corresponding values from the given domain object into form helper. The usage of `$input_prefix` and `$input_suffix` is the same as 
+* Import the corresponding values from the given domain object into form helper. The usage of `$input_prefix` and `$input_suffix` is the same as `exportToModel` method.
 
 Matching prefix or suffix while exporting to domain object
 ---
