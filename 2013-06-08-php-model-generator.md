@@ -34,7 +34,7 @@ Quick Start
 <?php
 $table = "Problem, problem";
 
-$columns =<<<EOF
+$columns = <<<EOF
 id
 name
 context
