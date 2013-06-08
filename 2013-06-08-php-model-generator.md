@@ -56,10 +56,21 @@ class Problem {
     var $name;
     var $context;
     
-    public find_by_id($id) {
+    static function find_by_id($id) {
     	$sql = "SELECT * FROM `problem` WHERE `id` = ?";
-        /* the following code omitted*/
+        return self::models(DB::instance()->fetch($sql,[$id]));        
     }
-    
+
+	static function insert(Problem $o) {
+		$sql = "INSERT INTO `problem` (`id`,`name`,`context`) VALUES (?,?,?);";
+		$o->id = DB::instance()->insert($sql,array($o->id,$o->name,$o->context));
+		return $o->id;
+	}
+
+	static function update(Problem $o) {
+		$sql = "UPDATE `problem` SET `name` = ?,`context` = ? WHERE `id` = ?";
+		return DB::instance()->execute($sql, array($o->name,$o->context,$o->id));
+	}
+	/* the following code is omitted*/
 }
 ```
