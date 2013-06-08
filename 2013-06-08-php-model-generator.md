@@ -28,9 +28,10 @@ Uninstallation
 Quick Start
 ---
 
-Model generator uses
+`problem.schema.php` contains
 
 ```php
+<?php
 $table = "Problem, problem";
 
 $columns =<<<EOF
@@ -38,7 +39,16 @@ id
 name
 context
 EOF;
+
+$methods = <<<EOF
+find by id
+EOF;
+?>
 ```
+```bash
+$ mdlgen problem.schema.php 
+```
+generates
 
 ```php
 class Problem {
@@ -46,8 +56,10 @@ class Problem {
     var $name;
     var $context;
     
-    public find() {
-    
+    public find_by_id($id) {
+    	$sql = "SELECT * FROM `problem` WHERE `id` = ?";
+        /* the following code omitted*/
     }
+    
 }
 ```
