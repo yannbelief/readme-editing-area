@@ -1,4 +1,6 @@
-## PHP Model Generator 
+PHP Model Generator 
+---
+
 **Alpha version**
 
 PHP Model Generator is a command line tool aids to generate a domain model class according to the customized configuration file which user wrote.
@@ -18,8 +20,8 @@ Installation
  Now, model generator is avaiable through `mdlgen` command in your terminal.
 
 
- ## Uninstallation
- 
+ Uninstallation
+ ===
 
 ```bash
 	sudo mdlgen-uninstall
