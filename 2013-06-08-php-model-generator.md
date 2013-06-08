@@ -5,7 +5,7 @@ PHP Model Generator
 
 PHP Model Generator is a command line tool aids to generate a domain model class according to the customized configuration file which user wrote.
 
-**Requirement:** PHP 5.4+
+**Requirement:** PHP 5.4+ and my [php-pdo-helper](https://github.com/yannbelief/php-pdo-helper)
 
 **License:** Free for commercial and non-commercial use ([Apache License](http://www.apache.org/licenses/LICENSE-2.0.html) or [GPL](http://www.gnu.org/licenses/gpl-2.0.html))
 
@@ -27,3 +27,27 @@ Uninstallation
 ```
 Quick Start
 ---
+
+Model generator uses
+
+```php
+$table = "Problem, problem";
+
+$columns =<<<EOF
+id
+name
+context
+EOF;
+```
+
+```php
+class Problem {
+	var $id;
+    var $name;
+    var $context;
+    
+    public find() {
+    
+    }
+}
+```
