@@ -14,7 +14,7 @@ Installation
     cd php-model-generator
     sudo ./install.sh
     
- Now, model generator is avaiable through `mdlgen` command.
+ Now, model generator is avaiable through `mdlgen` command in your terminal.
  
  Uninstallation
  ---
