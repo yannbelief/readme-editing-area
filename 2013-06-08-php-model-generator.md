@@ -19,9 +19,8 @@ Installation
 
  Now, model generator is avaiable through `mdlgen` command in your terminal.
 
-
- Uninstallation
- ===
+Uninstallation
+---
 
 ```bash
 	sudo mdlgen-uninstall
