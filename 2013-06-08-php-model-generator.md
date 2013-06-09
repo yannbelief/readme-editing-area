@@ -156,8 +156,8 @@ Problem::update($pbm);
 More about Selection
 ---
 The `find` command follows the grammar 
-`find (1) (<attr list>) (by <attr list>)`
-Here are some examples to show the results of generations based on different combinations
+`find (1) (<attr list>) (by <attr list>)`.
+Here are some examples to show the results of generations based on different combinations.
 
 command  | generated method | form of return
 ---|---|---
