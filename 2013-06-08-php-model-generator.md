@@ -104,12 +104,11 @@ The model was done for us. Next, we are going to use it to perform database oper
 ```php
 <?php
 require("php-pdo-helper/db.php");
-require("Problem.php");
-
 DB::$dsn = "mysql:host=<host_url>;dbname=<db>";
 DB::$account = "<user_name>";
 DB::$password = "<password>";
 
+require("Problem.php");
 $obj = Problem::find_1_by_name("mirror");
 print_r($obj);
 
