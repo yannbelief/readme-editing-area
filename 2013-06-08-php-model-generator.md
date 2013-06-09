@@ -182,7 +182,9 @@ find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
 More about Column Definitions
 ---
 
-Garmma: `<the attr name in class> (, <the column name in table>) (@ <the default value>)`
+Gramma of Column Definitions: `<the attr name in class> (, <the column name in table>) (@ <the default value>)`
+
+Hence the following configuration code:
 
 ```php
 $table = "Book; book";
