@@ -162,9 +162,9 @@ find attr1 | `find_attr1($attr1)` | array of values
 find attr1,attr2,... |`find_attr1_and_attr2($attr1,$attr2)` | array of objects
 find | `find()` | array of objects
 find by attr1,attr2,...  | `find_by_attr1_and_attr2($attr1,$attr2)` | array of objects
-find 1 attr1 by attr2 | `find_1_attr1_by_attr2()`| single value
-find 1 attr1,attr2,... by attr_n | `SELECT attr1, attr2,... FROM tbl WHERE attr_n = ?`| single object
-find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
+find 1 attr1 by attr2 | `find_1_attr1_by_attr2($attr1,$attr2)`| single value
+find 1 attr1,attr2,... by attr_n | `find_1_attr1_and_attr2_..._by_attr_n($attr1,$attr2,...,$attr_n)`| single object
+find 1 by attr1 | `find_1_attr1($attr1)`| single object
 
 command  | generated SQL | form of return
 ---|---|---
