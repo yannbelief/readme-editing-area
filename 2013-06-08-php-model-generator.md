@@ -101,7 +101,7 @@ The model was done for us. Next, we are going to use it to perform database oper
 ```bash
 	$ git clone git@github.com:yannbelief/php-pdo-helper.git
 ```
-Then we start to write 
+Then we start to write the code to configure database connection and use the newly generated domain class `Problem`.
 
 ```php
 <?php
