@@ -103,9 +103,17 @@ DB::$dsn = "mysql:host=<host_url>;dbname=<db>";
 DB::$account = "<user_name>";
 DB::$password = "<password>";
 
-$obj = Problem::find_1_by_name("sleepIn");
+$obj = Problem::find_1_by_name("mirror");
 print_r($obj);
 
+/*
+Problem Object
+(
+    [id] => 2
+    [name] => mirror
+    [context] => bathroom mirror broken 
+)
+*/
 
 $obj = Problem::find_1_by_id(2);
 print_r($obj);
