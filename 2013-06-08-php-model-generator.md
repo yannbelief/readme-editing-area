@@ -178,3 +178,6 @@ find by attr1,attr2,...  | `SELECT * FROM tbl WHERE attr1 = ?, attr2 = ?` | arra
 find 1 attr1 by attr2 | `SELECT attr1 FROM tbl WHERE attr2 = ?`| single value
 find 1 attr1,attr2,... by attr_n | `SELECT attr1, attr2,... FROM tbl WHERE attr_n = ?`| single object
 find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
+
+More about Column Definitions
+---
