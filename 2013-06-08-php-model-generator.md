@@ -153,7 +153,7 @@ $pbm = Problem::find_1_by_id(3);
 $pbm->context = "Heavy Dust with Windows";
 Problem::update($pbm);
 ```
-More about Selection
+More about Selections
 ---
 The `find` command follows the grammar 
 `find (1) (<attr list>) (by <attr list>)`.
@@ -182,7 +182,7 @@ find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
 More about Column Definitions
 ---
 
-Gramma of Column Definitions: `<the attr name in class> (, <the column name in table>) (@ <the default value>)`
+Gramma of Column Definition: `<the attr name in class> (, <the column name in table>) (@ <the default value>)`
 
 Hence the following configuration code:
 
