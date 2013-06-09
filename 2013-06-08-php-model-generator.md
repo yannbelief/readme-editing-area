@@ -136,4 +136,21 @@ Problem Object
 
 ?>
 ```
+**Insertion**
 
+```php
+$pbm = new Problem;
+$pbm->category = "window"
+$pbm->context = "Moisture on Windows";
+Problem::insert($pbm);
+echo $pbm->id; // 3
+```
+
+**Updating**
+
+
+```php
+$pbm = Problem::find_1_by_id(3);
+$pbm->context = "Heavy Dust on Windows";
+Problem::update($pbm);
+```
