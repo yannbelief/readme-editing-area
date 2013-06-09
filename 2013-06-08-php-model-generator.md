@@ -156,10 +156,10 @@ Problem::update($pbm);
 More about Selection
 ---
 
-command | generated method | generated SQL | form of return
----|---|---|---
+command  | generated SQL | form of return
+---|---|---
 find | find | `SELECT * FROM tbl` | array of objects
-find by attr1,attr2,... | find_by_attr1_and_attr2... | `SELECT * FROM tbl WHERE attr1 = ?, attr2 = ?` | array of objects
+find by attr1,attr2,...  | `SELECT * FROM tbl WHERE attr1 = ?, attr2 = ?` | array of objects
 find attr1 | `SELECT attr1 FROM tbl ` | array of values
 find attr1,attr2,... |`SELECT attr1, attr2 FROM tbl` | array of objects
 find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
