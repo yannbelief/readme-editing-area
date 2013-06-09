@@ -215,4 +215,11 @@ class Book{
     	$sql = "SELECT  `image_path` FROM `book` WHERE `id` = ?";
         return self::model(DB::instance()->fetchOneObj($sql,[$id]));
     }
+    /* the following code is omitted*/
 }
+```
+
+Known Issues
+---
+
+`insert()` and `update()` function need 
