@@ -101,6 +101,7 @@ The model was done for us. Next, we are going to use it to perform database oper
 ```bash
 	$ git clone git@github.com:yannbelief/php-pdo-helper.git
 ```
+Then we start to write 
 
 ```php
 <?php
@@ -137,6 +138,8 @@ Problem Object
 ?>
 ```
 **Insertion**
+
+The function `insert` accepts a domain object and return a newly inserted id and update the `id` attribute.
 
 ```php
 $pbm = new Problem;
