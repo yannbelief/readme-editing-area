@@ -49,7 +49,7 @@ EOF;
 Then use `mdlgen` command to perform  the generation under a terminal.
 
 ```bash
-$ mdlgen problem.schema.php 
+	$ mdlgen problem.schema.php 
 ```
 It will output
 
