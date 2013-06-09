@@ -36,13 +36,13 @@ $table = "Problem, problem";  // <the name of model class>, <the name of table i
 
 $columns = <<<EOF
 id
-name
+category
 context
 EOF;
 
 $methods = <<<EOF
 find 1 by id
-find 1 by name
+find 1 by category
 EOF;
 ?>
 ```
@@ -56,7 +56,7 @@ It will output
 ```php
 class Problem {
 	var $id;
-    var $name;
+    var $category;
     var $context;
     
 	static function find_1_by_id($id) {
@@ -64,9 +64,9 @@ class Problem {
 		return self::model(DB::instance()->fetchOneObj($sql,[$id]));
 	}
 
-	static function find_1_by_name($name) {
+	static function find_1_by_category($category) {
 		$sql = "SELECT  *  FROM `problem`  WHERE `category` = ?";
-		return self::model(DB::instance()->fetchOneObj($sql,[$name]));
+		return self::model(DB::instance()->fetchOneObj($sql,[$category]));
 	}
 
 	static function insert(Problem $o) {
