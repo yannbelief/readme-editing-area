@@ -28,6 +28,7 @@ Uninstallation
 Quick Start
 ---
 
+Assume there is a 
 
 | id     | category               | context  |
 | ------ | ------------------ | -------- |
@@ -147,6 +148,7 @@ echo $pbm->id; // 3
 
 **Updating**
 
+The function `update` is performed based on `id` column.
 
 ```php
 $pbm = Problem::find_1_by_id(3);
