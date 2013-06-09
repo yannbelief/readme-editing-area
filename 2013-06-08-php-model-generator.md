@@ -76,3 +76,8 @@ class Problem {
 	/* the following code is omitted*/
 }
 ```
+And we can redirect the output to a file instead of the terminal screen by giving command like this:
+
+```bash
+	$ mdlgen problem.schema.php > Problem.php	
+```
