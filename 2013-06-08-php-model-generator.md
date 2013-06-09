@@ -151,6 +151,6 @@ echo $pbm->id; // 3
 
 ```php
 $pbm = Problem::find_1_by_id(3);
-$pbm->context = "Heavy Dust on Windows";
+$pbm->context = "Heavy Dust with Windows";
 Problem::update($pbm);
 ```
