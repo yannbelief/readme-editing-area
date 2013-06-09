@@ -188,12 +188,12 @@ Garmma: `<the attr name in class> (, <the column name in table>) (@ <the default
 $table = "Book; book";
 
 $columns = <<< EOF
-id
+id @ -1
 imgPath, image_path @ "n/a"
 EOF;
 
 $fields = <<<EOF
-find imgPath by id
+find 1 imgPath by id
 EOF;
 ```
 generates:
@@ -201,11 +201,11 @@ generates:
 ```php
 
 class Book{
-	var $id;
-    var $imgPath;
+	var $id = -1;
+    var $imgPath = "n/a";
     
-    static function find_imgPath_by_id($id) {
-    	$sql = "SELECT  `imgPath` FROM `book` WHERE `id` = ?";
-        
+    static function find_1_imgPath_by_id($id) {
+    	$sql = "SELECT  `image_path` FROM `book` WHERE `id` = ?";
+        return self::model(DB::instance()->fetchOneObj($sql,[$id]));
     }
 }
