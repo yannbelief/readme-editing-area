@@ -45,7 +45,7 @@ find by id
 EOF;
 ?>
 ```
-Then use `mdlgen` command to perform generation in terminal.
+Then use `mdlgen` command to perform  the generation under a terminal.
 
 ```bash
 $ mdlgen problem.schema.php 
@@ -76,7 +76,7 @@ class Problem {
 	/* the following code is omitted*/
 }
 ```
-And we can redirect the output to a file instead of the terminal screen by giving command like this:
+And we can redirect the output to a file instead of the terminal screen by giving a command like this:
 
 ```bash
 	$ mdlgen problem.schema.php > Problem.php	
