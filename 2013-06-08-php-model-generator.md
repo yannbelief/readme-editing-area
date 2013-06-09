@@ -91,7 +91,7 @@ And we can redirect the output to a file instead of the terminal screen by givin
 The model was done for us. Next, we are going to use it to perform database operations.
 
 ```bash
-	git clone git@github.com:yannbelief/php-pdo-helper.git
+	$ git clone git@github.com:yannbelief/php-pdo-helper.git
 ```
 
 ```php
@@ -107,6 +107,7 @@ $db = DB::instance();
 
 $obj = Problem::find_1_by_name("sleepIn");
 print_r($obj);
+
 
 $obj = Problem::find_1_by_id(2);
 print_r($obj);
