@@ -96,7 +96,7 @@ And we can redirect the output to a file instead of the terminal screen by givin
 	$ mdlgen problem.schema.php > Problem.php	
 ```
 
-The model was done for us. Next, we are going to use it to perform database operations.
+The model was done for us. Next, we are going to use it to perform database operations. Notice that the genrated code has a dependency on my php-pdo-helper probject. We need to get the source code of it at first.
 
 ```bash
 	$ git clone git@github.com:yannbelief/php-pdo-helper.git
