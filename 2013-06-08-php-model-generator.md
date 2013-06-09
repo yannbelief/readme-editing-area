@@ -81,3 +81,6 @@ And we can redirect the output to a file instead of the terminal screen by givin
 ```bash
 	$ mdlgen problem.schema.php > Problem.php	
 ```
+
+The model was done for us. Now, let's use it to perform database operations.
+
