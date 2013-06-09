@@ -41,7 +41,8 @@ context
 EOF;
 
 $methods = <<<EOF
-find by id
+find 1 by id
+find 1 by name
 EOF;
 ?>
 ```
@@ -58,10 +59,15 @@ class Problem {
     var $name;
     var $context;
     
-    static function find_by_id($id) {
-    	$sql = "SELECT * FROM `problem` WHERE `id` = ?";
-        return self::models(DB::instance()->fetch($sql,[$id]));        
-    }
+	static function find_1_by_id($id) {
+		$sql = "SELECT  *  FROM `problem`  WHERE `id` = ?";
+		return self::model(DB::instance()->fetchOneObj($sql,[$id]));
+	}
+
+	static function find_1_by_name($name) {
+		$sql = "SELECT  *  FROM `problem`  WHERE `name` = ?";
+		return self::model(DB::instance()->fetchOneObj($sql,[$name]));
+	}
 
 	static function insert(Problem $o) {
 		$sql = "INSERT INTO `problem` (`id`,`name`,`context`) VALUES (?,?,?);";
@@ -82,5 +88,29 @@ And we can redirect the output to a file instead of the terminal screen by givin
 	$ mdlgen problem.schema.php > Problem.php	
 ```
 
-The model was done for us. Now, let's use it to perform database operations.
+The model was done for us. Next, we are going to use it to perform database operations.
+
+```bash
+	git clone git@github.com:yannbelief/php-pdo-helper.git
+```
+
+```php
+<?php
+require("php-pdo-helper/db.php");
+require("Problem.php");
+
+DB::$dsn = "mysql:host=<host_url>;dbname=<db>";
+DB::$account = "<user_name>";
+DB::$password = "<password>";
+
+$db = DB::instance();
+
+$obj = Problem::find_1_by_name("sleepIn");
+print_r($obj);
+
+$obj = Problem::find_1_by_id(2);
+print_r($obj);
+
+?>
+```
 
