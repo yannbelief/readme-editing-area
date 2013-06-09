@@ -28,6 +28,13 @@ Uninstallation
 Quick Start
 ---
 
+
+| id     | category               | context  |
+| ------ | ------------------ | -------- |
+| 1      | bill      | high engery bills   |
+| 2      | mirror   |  bathroom mirror broken   |
+
+
 Firstly, write a file named `problem.schema.php` which contains the following content:
 
 ```php
