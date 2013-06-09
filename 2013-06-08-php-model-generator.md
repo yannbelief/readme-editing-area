@@ -222,4 +222,4 @@ class Book{
 Known Issues
 ---
 
-`insert()` and `update()` function need 
+`insert()` and `update()` function need the attribute `id` and the column `id` to perform their operations. It will have some troubles if you don't have the attribute `id` or the column `id`.
