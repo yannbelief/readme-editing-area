@@ -181,3 +181,31 @@ find 1 by attr1 | `SELECT * FROM tbl WHERE attr1 = ?`| single object
 
 More about Column Definitions
 ---
+
+Garmma: `<the attr name in class> (, <the column name in table>) (@ <the default value>)`
+
+```php
+$table = "Book; book";
+
+$columns = <<< EOF
+id
+imgPath, image_path @ "n/a"
+EOF;
+
+$fields = <<<EOF
+find imgPath by id
+EOF;
+```
+generates:
+
+```php
+
+class Book{
+	var $id;
+    var $imgPath;
+    
+    static function find_imgPath_by_id($id) {
+    	$sql = "SELECT  `imgPath` FROM `book` WHERE `id` = ?";
+        
+    }
+}
