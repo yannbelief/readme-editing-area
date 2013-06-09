@@ -187,7 +187,7 @@ Garmma: `<the attr name in class> (, <the column name in table>) (@ <the default
 ```php
 $table = "Book; book";
 
-$columns = <<< EOF
+$columns = <<<EOF
 id @ -1
 imgPath, image_path @ "n/a"
 EOF;
