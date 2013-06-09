@@ -28,7 +28,7 @@ Uninstallation
 Quick Start
 ---
 
-`problem.schema.php` contains
+Firstly, write a file named `problem.schema.php` which contains
 
 ```php
 <?php
@@ -45,10 +45,12 @@ find by id
 EOF;
 ?>
 ```
+Then use `mdlgen` command to perform generation.
+
 ```bash
 $ mdlgen problem.schema.php 
 ```
-generates
+It will output
 
 ```php
 class Problem {
