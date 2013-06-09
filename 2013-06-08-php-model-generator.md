@@ -28,7 +28,7 @@ Uninstallation
 Quick Start
 ---
 
-Assume there is a 
+Assume there is a table named `problem` to keep information about the problems in a house. And we want to generate a domain model class for this table.
 
 | id     | category               | context  |
 | ------ | ------------------ | -------- |
