@@ -155,6 +155,8 @@ Problem::update($pbm);
 ```
 More about Selection
 ---
+The `find` command follows 
+`find (1) (<attr list>) (by <attr list>)`
 
 command  | generated method | form of return
 ---|---|---
