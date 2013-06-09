@@ -32,7 +32,7 @@ Firstly, write a file named `problem.schema.php` which contains the following co
 
 ```php
 <?php
-$table = "Problem, problem";
+$table = "Problem, problem";  // <the name of class>, <the name of table in database>
 
 $columns = <<<EOF
 id
