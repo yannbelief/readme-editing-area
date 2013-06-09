@@ -159,7 +159,7 @@ More about Selection
 command  | generated method | form of return
 ---|---|---
 find attr1 | `find_attr1($attr1)` | array of values
-find attr1,attr2,... |`find_attr1_and_attr2($attr1,$attr2)` | array of objects
+find attr1,attr2,... |`find_attr1_and_attr2_...($attr1,$attr2,...)` | array of objects
 find | `find()` | array of objects
 find by attr1,attr2,...  | `find_by_attr1_and_attr2($attr1,$attr2)` | array of objects
 find 1 attr1 by attr2 | `find_1_attr1_by_attr2($attr1,$attr2)`| single value
@@ -169,7 +169,7 @@ find 1 by attr1 | `find_1_attr1($attr1)`| single object
 command  | generated SQL | form of return
 ---|---|---
 find attr1 | `SELECT attr1 FROM tbl ` | array of values
-find attr1,attr2,... |`SELECT attr1, attr2 FROM tbl` | array of objects
+find attr1,attr2,... |`SELECT attr1, attr2,... FROM tbl` | array of objects
 find | `SELECT * FROM tbl` | array of objects
 find by attr1,attr2,...  | `SELECT * FROM tbl WHERE attr1 = ?, attr2 = ?` | array of objects
 find 1 attr1 by attr2 | `SELECT attr1 FROM tbl WHERE attr2 = ?`| single value
