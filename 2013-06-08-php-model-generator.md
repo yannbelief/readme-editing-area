@@ -65,19 +65,19 @@ class Problem {
 	}
 
 	static function find_1_by_name($name) {
-		$sql = "SELECT  *  FROM `problem`  WHERE `name` = ?";
+		$sql = "SELECT  *  FROM `problem`  WHERE `category` = ?";
 		return self::model(DB::instance()->fetchOneObj($sql,[$name]));
 	}
 
 	static function insert(Problem $o) {
-		$sql = "INSERT INTO `problem` (`id`,`name`,`context`) VALUES (?,?,?);";
-		$o->id = DB::instance()->insert($sql,array($o->id,$o->name,$o->context));
+		$sql = "INSERT INTO `problem` (`id`,`category`,`context`) VALUES (?,?,?);";
+		$o->id = DB::instance()->insert($sql,array($o->id,$o->category,$o->context));
 		return $o->id;
 	}
 
 	static function update(Problem $o) {
-		$sql = "UPDATE `problem` SET `name` = ?,`context` = ? WHERE `id` = ?";
-		return DB::instance()->execute($sql, array($o->name,$o->context,$o->id));
+		$sql = "UPDATE `problem` SET `category` = ?,`context` = ? WHERE `id` = ?";
+		return DB::instance()->execute($sql, array($o->category,$o->context,$o->id));
 	}
 	/* the following code is omitted*/
 }
@@ -110,13 +110,22 @@ print_r($obj);
 Problem Object
 (
     [id] => 2
-    [name] => mirror
+    [category] => mirror
     [context] => bathroom mirror broken 
 )
 */
 
-$obj = Problem::find_1_by_id(2);
+$obj = Problem::find_1_by_id(1);
 print_r($obj);
+
+/*
+Problem Object
+(
+    [id] => 1
+    [category] => bill
+    [context] => high engery bills
+)
+*/
 
 ?>
 ```
